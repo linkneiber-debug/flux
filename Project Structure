@@ -1,0 +1,16 @@
+flux-launcher/
+├── public/
+│   ├── electron.js
+│   ├── index.html
+│   └── flux-logo.png
+├── src/
+│   ├── components/
+│   │   ├── Sidebar.jsx
+│   │   ├── GameCard.jsx
+│   │   ├── Library.jsx
+│   │   └── Featured.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   └── index.js
+├── package.json
+└── .gitignore
