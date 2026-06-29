@@ -1,0 +1,97 @@
+.sidebar {
+  width: 280px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(30, 0, 60, 0.6));
+  border-right: 2px solid rgba(0, 212, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.flux-logo {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #00d4ff, #ff006e);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00d4ff, #ff006e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-item:hover {
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+}
+
+.nav-item.active {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(255, 0, 110, 0.2));
+  color: #fff;
+  border-left: 3px solid #00d4ff;
+}
+
+.sidebar-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00d4ff, #ff006e);
+}
+
+.user-details p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.username {
+  color: #fff;
+  font-weight: 600;
+}
+
+.status {
+  color: rgba(255, 255, 255, 0.5);
+}
