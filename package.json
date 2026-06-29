@@ -1,0 +1,42 @@
+{
+  "name": "flux-launcher",
+  "version": "1.0.0",
+  "description": "A modern game launcher with a sleek UI",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.6.4",
+    "react-scripts": "5.0.1",
+    "wait-on": "^7.0.1",
+    "concurrently": "^8.2.0"
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "electron-start": "electron .",
+    "electron-dev": "concurrently \"npm run react-start\" \"wait-on http://localhost:3000 && npm run electron-start\"",
+    "electron-build": "npm run react-build && electron-builder",
+    "start": "npm run electron-dev",
+    "build": "npm run electron-build"
+  },
+  "build": {
+    "appId": "com.fluxlauncher.app",
+    "productName": "Flux Launcher",
+    "files": [
+      "build/**/*",
+      "public/electron.js"
+    ],
+    "directories": {
+      "buildResources": "public"
+    }
+  }
+}
